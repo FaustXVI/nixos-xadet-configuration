@@ -1,0 +1,4 @@
+NIX_HOME=~/.nix-profile/nix-home
+
+ln -f -s $NIX_HOME/_config/i3 -t ~/.config
+
