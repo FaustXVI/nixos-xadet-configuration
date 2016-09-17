@@ -43,10 +43,6 @@ bindsym $mod+r exec /run/current-system/sw/bin/dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+m focus right
 bindsym $mod+Tab focus right
 bindsym $mod+Shift+Tab focus left
 
@@ -159,3 +155,5 @@ bar {
         status_command /run/current-system/sw/bin/i3status
         # tray_output primary
 }
+
+bindsym $mod+l exec i3lock
