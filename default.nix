@@ -4,11 +4,11 @@ let
   pkgs = import <nixpkgs> { inherit system; };
 in
 rec {
-	i3 = import ./i3 {
+	xadet-i3-config = import ./i3 {
 		inherit (pkgs) stdenv;
 	};
 
-	nix-home = import ./nix-home {
+	xadet-nix-home = import ./nix-home {
 		inherit (pkgs) stdenv;
 	};
 }
