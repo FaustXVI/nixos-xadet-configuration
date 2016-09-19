@@ -11,4 +11,8 @@ rec {
 	xadet-nix-home = import ./nix-home {
 		inherit (pkgs) stdenv;
 	};
+
+	xadet-bash = import ./bash {
+		inherit (pkgs) stdenv;
+	};
 }
