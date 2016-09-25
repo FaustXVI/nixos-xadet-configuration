@@ -12,7 +12,11 @@ rec {
 		inherit (pkgs) stdenv;
 	};
 
-	xadet-bash = import ./bash {
+    xadet-bash = import ./bash {
+		inherit (pkgs) stdenv;
+	};
+
+    xadet-ssh = import ./ssh {
 		inherit (pkgs) stdenv;
 	};
 }
