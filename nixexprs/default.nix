@@ -18,5 +18,6 @@ rec {
 
     xadet-ssh = import ./ssh {
 		inherit (pkgs) stdenv gnupg;
+		inherit (builtins) getEnv;
 	};
 }
