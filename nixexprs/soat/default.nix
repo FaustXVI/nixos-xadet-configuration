@@ -8,4 +8,7 @@ rec {
 		inherit (pkgs) stdenv gnupg;
 		inherit (builtins) getEnv;
 	};
+    soat-gitconfig = import ./git {
+		inherit (pkgs) stdenv;
+	};
 }
