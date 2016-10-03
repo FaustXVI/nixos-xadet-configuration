@@ -1,3 +1,7 @@
 [user]
 	email = xavier.detant@gmail.fr
 	name = FaustXVI
+	signingkey = B0671321
+
+[commit]
+	gpgsign = true
