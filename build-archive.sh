@@ -1,1 +1,1 @@
-tar cvjf docs/nixexprs.tar.xz nixexprs/
+tar cvJf docs/nixexprs.tar.xz nixexprs/
