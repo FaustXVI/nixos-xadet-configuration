@@ -1,7 +1,7 @@
 { stdenv, gnupg, getEnv }:
 
 stdenv.mkDerivation {
-	name = "xadet-ssh-1.0";
+	name = "home-ssh-1.0";
 	builder = ./builder.sh;
 	src = ./.;
 	buildInputs = [ gnupg ];

@@ -1,6 +1,8 @@
 { system ? builtins.currentSystem } @ args:
 
 let
-  xadet = import ./xadet (args // {inherit system;});
-  soat = import ./soat (args // {inherit system;});
-in (xadet // soat)
+  profiles = import ./profiles (args // {inherit system;});
+  commons = import ./xadet-commons (args // {inherit system;});
+in (profiles // commons)
+
+
