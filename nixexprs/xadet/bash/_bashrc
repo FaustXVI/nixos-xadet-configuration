@@ -46,3 +46,4 @@ fi
 if [ -f ~/.maven_bash_completion.bash ]; then
     . ~/.maven_bash_completion.bash
 fi
+eval "$(direnv hook bash)"
