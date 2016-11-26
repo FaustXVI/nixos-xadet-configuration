@@ -15,4 +15,11 @@ rec {
 	xadet-bash = import ./bash {
 		inherit (pkgs) stdenv;
 	};
+
+	xadet-vim = import ./vim {
+		inherit (pkgs) stdenv;
+	};
+	xadet-emacs = import ./emacs {
+		inherit (pkgs) stdenv;
+	};
 }
