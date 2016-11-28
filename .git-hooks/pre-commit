@@ -1,0 +1,44 @@
+contains() {
+    for e in $2
+    do
+        if [ $e == $1 ]
+        then
+            return 0
+        fi
+    done
+    return -1
+}
+
+CHANGED_FILE=$(git diff --cached --name-only | grep "nixexprs/" | grep -v default.nix)
+CHANGED_MANIFESTS=$(git diff --cached --name-only | grep "nixexprs/" | grep default.nix)
+
+if [ -n "$CHANGED_FILE" ]
+then
+    if [ -z "$CHANGED_MANIFESTS" ]
+    then
+        echo "You forgot to change default.nix files"
+        exit -1
+    fi
+    CHANGED_FILE_DIR=$(echo "$CHANGED_FILE" | sort | xargs dirname)
+    CHANGED_MANIFESTS_DIR=$(echo "$CHANGED_MANIFESTS" | sort | xargs dirname)
+    for folder in $CHANGED_FILE_DIR
+    do
+        failed=false
+        if ! contains $folder $CHANGED_MANIFESTS_DIR
+        then
+            echo "You forgot to change the default.nix file in $folder"
+            failed=true
+        fi
+        if $failed
+        then
+            exit -1
+        fi
+    done
+    TAR=$(git diff --cached --name-only | grep nixexprs.tar.xz )
+    if [ -z "$TAR" ]
+    then
+        echo "You forgot to create the archive so I created it for you. Please re-commit."
+        tar cJf docs/nixexprs.tar.xz nixexprs/
+        git add docs/nixexprs.tar.xz
+    fi
+fi
