@@ -37,7 +37,7 @@ then
     TAR=$(git diff --cached --name-only | grep nixexprs.tar.xz )
     if [ -z "$TAR" ]
     then
-        echo "You forgot to create the archive so I created it for you. Please re-commit."
+        echo "You forgot to create the archive so I created it for you."
         tar cJf docs/nixexprs.tar.xz nixexprs/
         git add docs/nixexprs.tar.xz
     fi
