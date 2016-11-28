@@ -1,7 +1,7 @@
 { stdenv }:
 
 stdenv.mkDerivation {
-	name = "home-gitconfig-1.2";
+	name = "home-gitconfig-1.3";
 	builder = ./builder.sh;
 	src = ./.;
 }
