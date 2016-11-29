@@ -156,4 +156,4 @@ bar {
         # tray_output primary
 }
 
-bindsym $mod+l exec i3lock
+bindsym $mod+l exec i3lock -i ~/.background-image
