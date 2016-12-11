@@ -1,14 +1,15 @@
 [user]
-	email = xavier.detant@gmail.com
-	name = FaustXVI
-	signingkey = B0671321
+    email = xavier.detant@gmail.com
+    name = FaustXVI
+    signingkey = B0671321
 
 [commit]
-	gpgsign = true
+    gpgsign = true
 [gpg]
-	program = gpg2
+    program = gpg2
 [alias]
-	co = checkout
-	ci = commit
-	st = status
-	br = branch
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    branch-clean = "!git branch --merged | grep -v master | xargs -n 1 git branch -d"
