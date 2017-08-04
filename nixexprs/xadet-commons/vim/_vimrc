@@ -32,3 +32,4 @@ set laststatus=2
 set showmatch
 syntax on
 set hlsearch
+set number
