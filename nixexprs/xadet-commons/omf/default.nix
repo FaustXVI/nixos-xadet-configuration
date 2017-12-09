@@ -3,7 +3,7 @@
 with import <nixpkgs> { inherit system;};
 
 stdenv.mkDerivation {
-	name = "xadet-omf-1.2";
+	name = "xadet-omf-1.3";
 	src = ./.;
     buildInputs = [
         curl
@@ -17,7 +17,6 @@ stdenv.mkDerivation {
         mkdir -p $out/nix-home
         export HOME=$out/nix-home
         fish install --noninteractive
-        sed -E -i s@\\\$HOME@$HOME@g $out/nix-home/.config/fish/conf.d/omf.fish
         cd $HOME
         rm -r .nix-defexpr .cache .config/omf .config/fish/fishd.nixos
         unlink .nix-profile
