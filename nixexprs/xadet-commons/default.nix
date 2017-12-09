@@ -22,4 +22,5 @@ rec {
 	xadet-emacs = import ./emacs {
 		inherit (pkgs) stdenv;
 	};
+	xadet-omf = import ./omf {};
 }

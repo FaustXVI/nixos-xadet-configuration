@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 contains() {
     for e in $2
     do
@@ -24,7 +25,7 @@ then
     for folder in $CHANGED_FILE_DIR
     do
         failed=false
-        if ! contains $folder $CHANGED_MANIFESTS_DIR
+        if ! contains $folder "$CHANGED_MANIFESTS_DIR"
         then
             echo "You forgot to change the default.nix file in $folder"
             failed=true

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 NIX_HOME=$HOME/.nix-profile/nix-home
 
 function link_recursively() {
