@@ -3,7 +3,7 @@
 with import <nixpkgs> { inherit system;};
 
 stdenv.mkDerivation {
-	name = "xadet-omf-1.1";
+	name = "xadet-omf-1.2";
 	src = ./.;
     buildInputs = [
         curl
@@ -22,5 +22,6 @@ stdenv.mkDerivation {
         rm -r .nix-defexpr .cache .config/omf .config/fish/fishd.nixos
         unlink .nix-profile
         mv .config _config
+        mv .local _local
     '';
 }
