@@ -1,4 +1,5 @@
 (require 'package)
+
 (add-to-list 'package-archives
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
              (package-initialize)
@@ -10,6 +11,7 @@
                       auto-complete
                       rainbow-delimiters
                       haskell-mode
+		      ergoemacs-mode
                       auctex
                       use-package))
 
@@ -26,6 +28,7 @@
   :init (setq markdown-command "multimarkdown"))
 
 (set-face-attribute 'region nil :background "#999")
-(global-unset-key (kbd "C-z"))
 (setq x-select-enable-clipboard t)
 (setq ispell-list-command "--list")
+
+(global-set-key (kbd "C-z") 'undo)

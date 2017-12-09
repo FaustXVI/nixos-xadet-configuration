@@ -1,7 +1,7 @@
 { stdenv }:
 
 stdenv.mkDerivation {
-	name = "xadet-emacs-1.1";
+	name = "xadet-emacs-1.2";
 	builder = ./builder.sh;
 	src = ./.;
 }
