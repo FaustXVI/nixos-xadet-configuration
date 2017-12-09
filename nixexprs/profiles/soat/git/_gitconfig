@@ -1,9 +1,0 @@
-[user]
-    email = xavier.detant@soat.fr
-    name = Xavier DETANT
-[alias]
-    co = checkout
-    ci = commit
-    st = status
-    br = branch
-    cleanup = "!git branch --merged | grep -v master | xargs -n 1 git branch -d"
