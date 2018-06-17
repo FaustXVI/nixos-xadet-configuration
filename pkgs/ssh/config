@@ -1,0 +1,4 @@
+Host gitlab.pic.fatec-group.com
+HostName 10.0.3.1
+IdentityFile /home/xadet/.ssh/id_rsa
+Port 2222
