@@ -7,6 +7,7 @@ with pkgs; {
     peco
       powerline-fonts
   ];
+  home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
     enable = true;
     defaultCacheTtl = 1800;
