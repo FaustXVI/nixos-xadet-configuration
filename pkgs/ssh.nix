@@ -1,8 +1,8 @@
-{ pkgs, lib, ...}:
-let
- mylib = import ./mylib.nix { inherit lib; };
- inherit (mylib.home) pkgToFolder;
-in with pkgs; {
-    home.packages = [ xadet-ssh ];
-    home.file = pkgToFolder ".ssh" xadet-ssh;
+{ pkgs, ...}:
+with pkgs; {
+  home.packages = [ xadet-ssh ];
+  home.file.".ssh" = {
+    recursive = true;
+    source = xadet-ssh;
+  };
 }
