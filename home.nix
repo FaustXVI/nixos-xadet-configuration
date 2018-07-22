@@ -4,7 +4,9 @@ with pkgs; {
     ./pkgs
   ];
   home.packages = [
-    peco
+      firefox
+      thefuck
+      peco
       powerline-fonts
   ];
   home.file.".nix-channels".source = ./nix-channels;
