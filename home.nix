@@ -8,6 +8,7 @@ with pkgs; {
       thefuck
       peco
       powerline-fonts
+      jetbrains.idea-ultimate
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
