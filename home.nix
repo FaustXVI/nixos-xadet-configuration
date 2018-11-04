@@ -23,6 +23,8 @@ with pkgs; {
       simplescreenrecorder
       gimp
       shotwell
+      wpsoffice
+      libwps
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
