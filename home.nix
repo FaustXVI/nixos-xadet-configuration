@@ -19,6 +19,10 @@ with pkgs; {
       xpdf
       vlc
       emacs
+      feh
+      simplescreenrecorder
+      gimp
+      shotwell
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
