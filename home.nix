@@ -25,6 +25,9 @@ with pkgs; {
       shotwell
       wpsoffice
       libwps
+      docker-compose
+      blueman
+      libreoffice
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
