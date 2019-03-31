@@ -25,6 +25,10 @@ with pkgs; {
       docker-compose
       blueman
       libreoffice
+      wpsoffice
+      libwps
+      patchelf
+      autoPatchelfHook
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
