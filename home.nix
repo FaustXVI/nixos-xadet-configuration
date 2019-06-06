@@ -12,7 +12,6 @@ with pkgs; {
       jetbrains.idea-ultimate
       nix-index
       rlwrap
-      wpsoffice
       discord
       spotify
       slack
