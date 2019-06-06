@@ -22,8 +22,6 @@ with pkgs; {
       simplescreenrecorder
       gimp
       shotwell
-      wpsoffice
-      libwps
       docker-compose
       blueman
       libreoffice
