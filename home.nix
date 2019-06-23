@@ -29,6 +29,7 @@ with pkgs; {
       libwps
       patchelf
       autoPatchelfHook
+      srm
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {

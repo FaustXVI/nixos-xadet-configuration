@@ -6,7 +6,7 @@
             userEmail = "xavier.detant@gmail.com";
             signing = {
                 signByDefault = true;
-                key = "B0671321";
+                key = "98AC52834768871837C022716E983A14A5221EE1";
             };
             aliases = {
                 co = "checkout";
