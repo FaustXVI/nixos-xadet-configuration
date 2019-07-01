@@ -25,8 +25,6 @@ with pkgs; {
       docker-compose
       blueman
       libreoffice
-      wpsoffice
-      libwps
       patchelf
       autoPatchelfHook
       srm
