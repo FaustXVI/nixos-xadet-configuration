@@ -6,6 +6,5 @@
             ./emacs.nix
             ./vim.nix
             ./fish.nix
-            ./yubikey.nix
     ];
 }
