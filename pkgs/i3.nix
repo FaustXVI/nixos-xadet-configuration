@@ -159,7 +159,7 @@
 # tray_output primary
                 }
 
-            bindsym $mod+l exec i3lock -i ~/.background-image
+            bindsym $mod+l exec i3lock -t -i ~/.background-image
 
             for_window [window_type=dialog] focus
                 '';
