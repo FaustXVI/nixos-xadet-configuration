@@ -34,6 +34,7 @@ with pkgs; {
     enable = true;
     defaultCacheTtl = 1800;
     enableSshSupport = true;
+    enableExtraSocket = true;
   };
   programs = {
     home-manager = {
