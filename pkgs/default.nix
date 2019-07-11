@@ -6,5 +6,6 @@
             ./emacs.nix
             ./vim.nix
             ./fish.nix
+            ./gpg.nix
     ];
 }
