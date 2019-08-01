@@ -4,8 +4,4 @@ self: super:
         inherit (super) stdenv gnupg ;
         inherit (builtins) getEnv;
     };
-    xadet-ssh = import ../pkgs/ssh {
-        inherit (super) stdenv gnupg ;
-        inherit (builtins) getEnv;
-    };
 }
