@@ -36,4 +36,13 @@ with pkgs; {
     enableSshSupport = true;
     enableExtraSocket = true;
   };
+  programs = {
+    fish = {
+      enable = true;
+    };
+    home-manager = {
+      enable = true;
+
+    };
+  };
 }
