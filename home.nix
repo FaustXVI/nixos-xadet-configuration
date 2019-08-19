@@ -28,6 +28,7 @@ with pkgs; {
       patchelf
       autoPatchelfHook
       srm
+      dia
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
