@@ -17,6 +17,9 @@
                 next = "!git checkout `git rev-list HEAD..demo-end | tail -1`";
               };
             extraConfig = {
+              push = {
+                default = "current";
+              };
               core = {
                 excludesfile = "~/.gitignore_global";
               };
