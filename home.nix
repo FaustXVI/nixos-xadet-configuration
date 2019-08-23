@@ -29,6 +29,8 @@ with pkgs; {
       autoPatchelfHook
       srm
       dia
+      fzf
+      gitAndTools.hub
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
