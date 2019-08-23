@@ -31,6 +31,7 @@ with pkgs; {
       dia
       fzf
       gitAndTools.hub
+      autojump
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
