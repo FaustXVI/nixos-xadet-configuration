@@ -7,5 +7,6 @@
             ./vim.nix
             ./fish.nix
             ./gpg.nix
+            ./terminator.nix
     ];
 }
