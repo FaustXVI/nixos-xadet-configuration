@@ -33,6 +33,8 @@ with pkgs; {
       gitAndTools.hub
       autojump
       yubioath-desktop
+      nix-prefetch-git
+      nix-prefetch-scripts
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
