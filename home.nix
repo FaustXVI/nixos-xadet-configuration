@@ -32,6 +32,7 @@ with pkgs; {
       fzf
       gitAndTools.hub
       autojump
+      yubioath-desktop
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
