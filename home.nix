@@ -35,6 +35,7 @@ with pkgs; {
       yubioath-desktop
       nix-prefetch-git
       nix-prefetch-scripts
+      any-nix-shell
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
@@ -46,6 +47,9 @@ with pkgs; {
   programs = {
     fish = {
       enable = true;
+      promptInit =''
+        any-nix-shell fish --info-right | source
+      '';
     };
     home-manager = {
       enable = true;
