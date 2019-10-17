@@ -20,6 +20,9 @@
               push = {
                 default = "current";
               };
+              pull = {
+                rebase = true;
+              };
               core = {
                 excludesfile = "~/.gitignore_global";
               };
