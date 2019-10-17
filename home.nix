@@ -36,6 +36,7 @@ with pkgs; {
       nix-prefetch-git
       nix-prefetch-scripts
       any-nix-shell
+      telnet
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
