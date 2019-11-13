@@ -37,6 +37,7 @@ with pkgs; {
       nix-prefetch-scripts
       any-nix-shell
       telnet
+      busybox
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
