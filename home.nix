@@ -21,6 +21,7 @@ with pkgs; {
       feh
       simplescreenrecorder
       gimp
+      rawtherapee
       shotwell
       docker-compose
       blueman
