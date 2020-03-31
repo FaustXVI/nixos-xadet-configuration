@@ -15,7 +15,6 @@ with pkgs; {
       discord
       spotify
       slack
-      xpdf
       vlc
       emacs
       feh
@@ -41,12 +40,6 @@ with pkgs; {
       busybox
   ];
   home.file.".nix-channels".source = ./nix-channels;
-  services.gpg-agent = {
-    enable = true;
-    defaultCacheTtl = 1800;
-    enableSshSupport = true;
-    enableExtraSocket = true;
-  };
   programs = {
     fish = {
       enable = true;
@@ -56,7 +49,6 @@ with pkgs; {
     };
     home-manager = {
       enable = true;
-
     };
   };
 }
